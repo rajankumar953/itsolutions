@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>IT Solution</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static\assets\img\favicon.jpg" rel="icon">
+  <link href="static\assets\img\apple-touch-icon.jpg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="home">IT Solution</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="getstarted scrollto" href="/admin"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle"
+            viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+            <path fill-rule="evenodd"
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+          </svg>&nbsp;&nbsp;Admin</a></li>
+          <li><a class="getstarted scrollto" href="/logout"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-left"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z" />
+            <path fill-rule="evenodd"
+              d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z" />
+          </svg>&nbsp;&nbsp;Logout</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+    {% if messages %}
+    {% for message in messages %}
+    <div class="alert alert-{{ message.tags }} alert-dismissible fade show my-0" role="alert">
+      <strong>{{ message }}</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endfor %}
+    {% endif %}
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <h1>Better Solutions For Your Business</h1>
+          <h2>We are team of talented designers and technicians to provide you the best IT Solutions</h2>
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            <a href="static\assets\img\itsolutioninfo.mp4" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="static/assets/img/hero-img.png" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients section-bg">
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in">
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="static\assets\img\clients\client-1.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="static\assets\img\clients\client-2.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="static\assets\img\clients\client-3.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="static\assets\img\clients\client-7.jpeg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="static\assets\img\clients\client-5.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="static\assets\img\clients\client-6.png" class="img-fluid" alt="">
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Cliens Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About Us</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              We provide innovative and reliable IT solutions.
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> We provide top SEEO ranked websites</li>
+              <li><i class="ri-check-double-line"></i> We prove best quality survelliance cameras and DVRs</li>
+              <li><i class="ri-check-double-line"></i> We prove the best speed internet services</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              Our IT solutions company offers innovative and cutting-edge technology services for businesses of all sizes. We
+              specialize in custom Website development, survelliance, Internet services, and digital transformation. With a team of
+              experienced professionals, we provide reliable and cost-effective solutions to help our clients achieve their goals and
+              stay ahead in today's competitive market.
+            </p>
+            <a href="static\assets\img\itsolutionabout.mp4" class="btn-learn-more glightbox btn-watch-video">Learn More</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us section-bg">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+            <div class="content">
+              <h3><strong>Internet Services</strong></h3>
+              <p>
+                Our internet service providing company offers fast, reliable, and affordable internet connectivity, with 24/7 customer
+                support, flexible plans, and a range of value-added services, including email, web hosting, and cloud storage.
+              </p>
+            </div>
+
+            <div class="accordion-list">
+              <ul>
+                <li>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Secure Your Property with Online CCTV Monitoring <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                    <p>
+                      Ensure safety of your home or business with remote online CCTV monitoring and surveillance systems.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> "Lightning-fast internet to power up your digital world <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      Experience high-speed connectivity with our reliable internet service, designed to meet your online needs.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Top routers with free Zeetv & Hotstar: unbeatable internet experience <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      Get the ultimate internet experience with our top-quality routers, plus enjoy free subscriptions to Zeetv and Hotstar
+                      for endless entertainment.
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("static/assets/img/why-us.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+            <img src="static/assets/img/skills.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+            <h3>Wesite Designing and Development</h3>
+            <p class="fst-italic">
+              As a web developer, I create stunning websites using the below tools &amp; skills that are not only visually appealing but also optimized for performance
+              and user experience.
+            </p>
+
+            <div class="skills-content">
+
+              <div class="progress">
+                <span class="skill">HTML <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">CSS <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">JavaScript <i class="val">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">Photoshop <i class="val">55%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Our IT solutions company offers a range of services, including web development, cloud solutions, cybersecurity, software
+          development, and IT consulting. Contact us for more information.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-router"></i></div>
+              <h4><a href="">Internet Services</a></h4>
+              <p>IT Solution offers internet services like broadband, leased lines, VPN, and Wi-Fi installation and management
+              to ensure fast, secure, and reliable internet connectivity.</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-camera-reels"></i></div>
+              <h4><a href="">Survelliance</a></h4>
+              <p>Our camera surveillance services offer advanced security and monitoring solutions for businesses, homes, and public
+              spaces, ensuring safety and peace of mind.</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-browser-chrome"></i></div>
+              <h4><a href="">Web Development</a></h4>
+              <p>Our website development services include custom design, responsive development, content creation, and SEO optimization
+              for a powerful online presence.</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-display"></i></div>
+              <h4><a href="">Techincal Gadgets</a></h4>
+              <p>Purchase the latest technical gadgets from IT Solution including PC, laptops, tablets, headphones,
+              smartwatches, printers, cameras, and accessories.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3>Avail Our Services</h3>
+            <p> Enjoy top-notch services from IT Solution including tech support, device repair, data recovery, network setup,
+            survelliance, and software installation.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="/signup">Register Now</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>IT Solution is a leading provider of innovative IT services and solutions, offering expertise in tech support, device
+          repair, data management, survelliance, network setup, and software development to clients across industries.</p>
+        </div>
+
+        <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-Internet">Internet</li>
+          <li data-filter=".filter-Surveillance">Surveillance</li>
+          <li data-filter=".filter-Gadgets">Gadgets</li>
+        </ul>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Internet">
+            <div class="portfolio-img"><img src="static\assets\img\portfolio\router.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Router</h4>
+              <p>Internet</p>
+              <a href="static\assets\img\portfolio\router.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Internet 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio" class="details-link" title="More Details"><i class="bi bi-cart3"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Gadgets">
+            <div class="portfolio-img"><img src="static\assets\img\portfolio\ssd.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>HDD &amp; SSD</h4>
+              <p>Gadgets</p>
+              <a href="static\assets\img\portfolio\ssd.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Gadgets 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio6" class="details-link" title="More Details"><i class="bi bi-cart3"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Internet">
+            <div class="portfolio-img"><img src="static\assets\img\portfolio\settopbox.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Set-Top Box</h4>
+              <p>Internet</p>
+              <a href="static\assets\img\portfolio\settopbox.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Internet 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio1" class="details-link" title="More Details"><i class="bi bi-cart3"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Surveillance">
+            <div class="portfolio-img"><img src="static\assets\img\portfolio\camera.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Camera</h4>
+              <p>Surveillance</p>
+              <a href="static\assets\img\portfolio\camera.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Surveillance 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio3" class="details-link" title="More Details"><i class="bi bi-cart3"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Gadgets">
+            <div class="portfolio-img"><img src="static\assets\img\portfolio\printer.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Printer</h4>
+              <p>Gadgets</p>
+              <a href="static\assets\img\portfolio\printer.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Gadgets 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio7" class="details-link" title="More Details"><i class="bi bi-cart3"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Internet">
+            <div class="portfolio-img"><img src="static\assets\img\portfolio\firestick.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Firestick</h4>
+              <p>Internet</p>
+              <a href="static\assets\img\portfolio\firestick.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Internet 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio2" class="details-link" title="More Details"><i class="bi bi-cart3"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Surveillance">
+            <div class="portfolio-img"><img src="static\assets\img\portfolio\dvr.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>DVRs</h4>
+              <p>Surveillance</p>
+              <a href="static\assets\img\portfolio\dvr.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Surveillance 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio4" class="details-link" title="More Details"><i class="bi bi-cart3"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Surveillance">
+            <div class="portfolio-img"><img src="static\assets\img\portfolio\allinone.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>All-in-one</h4>
+              <p>Surveillance</p>
+              <a href="static\assets\img\portfolio\allinone.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Surveillance 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio5" class="details-link" title="More Details"><i class="bi bi-cart3"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-Gadgets">
+            <div class="portfolio-img"><img src="static\assets\img\portfolio\monitor.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Monitors &amp; TVs</h4>
+              <p>Gadgets</p>
+              <a href="static\assets\img\portfolio\monitor.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Gadgets 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio8" class="details-link" title="More Details"><i class="bi bi-cart3"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <p>IT Solution is powered by a team of highly skilled and experienced professionals, who are dedicated to delivering
+          exceptional IT services and solutions that meet the unique needs of each client.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="static\assets\img\team\Somnathyadav.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Somnath Yadav</h4>
+                <span>Founder &amp; CEO</span>
+                <p>Meet the visionary Founder and CEO of IT Solution.</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="static\assets\img\team\tech.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Vikas Kumar</h4>
+                <span>Technician</span>
+                <p>Meet the Skilled Technician of IT Solution.</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="static\assets\img\team\rajan.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Rajan Kumar</h4>
+                <span>Web Developer &amp; Designer</span>
+                <p>Meet the skilled web developer and designer of IT Solution.</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="static\assets\img\team\buntybhaiya.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Somnath Yadav</h4>
+                <span>Accountant</span>
+                <p>Meet the accountant of IT Solution.</p>
+                <div class="social">
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Pricing</h2>
+          <p>IT Solution offers affordable internet service plans, with high-speed connectivity, unlimited data usage, and reliable
+          performance. Choose from a range of options to find the plan that best fits your needs.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="box">
+              <h3>Trial Plan</h3>
+              <h4><sup>&#8377;</sup>299<span>per month</span></h4>
+              <ul>
+                <li><i class="bx bx-check"></i> 10 Mbps speed</li>
+                <li><i class="bx bx-check"></i> 15 days validity</li>
+                <li><i class="bx bx-check"></i> Free Router</li>
+                <li class="na"><i class="bx bx-x"></i> <span>Free Installation</span></li>
+                <li class="na"><i class="bx bx-x"></i> <span>Free Subscription of Zee5 &amp; Hotstar</span></li>
+              </ul>
+              <a href="trial" class="buy-btn">Buy Now</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="box featured">
+              <h3>Business Plan</h3>
+              <h4><sup>&#8377;</sup>899<span>per month</span></h4>
+              <ul>
+                <li><i class="bx bx-check"></i> 200 Mbps speed</li>
+                <li><i class="bx bx-check"></i> Free Router</li>
+                <li><i class="bx bx-check"></i> Free Installation</li>
+                <li><i class="bx bx-check"></i> Free Subscription of Zee5 &amp; Hotstar</li>
+                <li><i class="bx bx-check"></i> Free mantainance</li>
+              </ul>
+              <a href="business" class="buy-btn">Buy Now</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="box">
+              <h3>Home Plan</h3>
+              <h4><sup>&#8377;</sup>599<span>per month</span></h4>
+              <ul>
+                <li><i class="bx bx-check"></i> 120 Mbps speed</li>
+                <li><i class="bx bx-check"></i> Free Router</li>
+                <li><i class="bx bx-check"></i> Free Installation</li>
+                <li><i class="bx bx-check"></i> Free Subscription of Zee5 &amp; Hotstar</li>
+                <li><i class="bx bx-check"></i> Free mantainance</li>
+              </ul>
+              <a href="homeplan" class="buy-btn">Buy Now</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Pricing Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+          <p>Some of the Questions asked by our new users are listed below please read it and get the answers that are arising in your mind related to our company.</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">What is the level of customer support provided for this IT solution? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  The level of customer support varies depending on the IT solution. Please check the product documentation or contact the
+                  our support team.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">What level of technical support is included in the IT solution package I am purchasing? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Our package includes comprehensive technical support, including troubleshooting, software updates, and
+                  remote assistance for your convenience.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">What is the cost and implementation time for this IT solution for my business? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  The cost and implementation time of the IT solution will vary depending on your business requirements and complexity.
+                  Let's discuss further.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">What is the maximum internet speed provided by IT Solution? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  The maximum internet speed provided by IT Solution depends on the specific plan chosen by the customer.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="500">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Can i purchase networking gadgets such as routers and TV monitors from IT Solution? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Yes, IT Solution offers a wide selection of networking gadgets including routers and TV monitors for purchase.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Contact IT Solution for all your technology needs. Our team of experts is ready to assist you with IT solutions, sales,
+          and support. Get in touch today!</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Near State Bank Of India<br>
+                Janidih Ghogha, BHagalpur 813205<br>
+                India</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>itsolutionbihar@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 916-211-5232</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37442.92323487579!2d86.96361888693613!3d25.235064149024666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f049f79910fbc7%3A0x9e3efe37aca8e227!2sBhagalpur%2C%20Bihar!5e0!3m2!1sen!2sin!4v1660564824547!5m2!1sen!2sin" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+          
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="/querry" method="post" role="formm" class="php-email-formm">
+              {% csrf_token %}
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loadingg"></div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4>Join Our Newsletter</h4>
+            <p>Join our newsletter for the latest technology news, product updates, and exclusive promotions from IT Solution.</p>
+            <form action="/newsletter" method="post">
+              {% csrf_token %}
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>IT Solution</h3>
+            <p>
+              Near State Bank Of India<br>
+              Janidih Ghogha, BHagalpur 813205<br>
+              India <br><br>
+              <strong>Phone:</strong> +91 916-211-5232<br>
+              <strong>Email:</strong> itsolutionbihar@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>Stay connected with IT Solution on our social networking sites for technology news and updates.</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>IT Solution</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
+        Designed by <a href="https://www.instagram.com/rajan_yadav_08/">Rajan Kumar</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="static/assets/vendor/aos/aos.js"></script>
+  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="static/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/assets/js/main.js"></script>
+
+</body>
+
+</html>

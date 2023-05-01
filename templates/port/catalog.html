@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Catalog | IT Solution</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static\assets\img\favicon.jpg" rel="icon">
+  <link href="static\assets\img\apple-touch-icon.jpg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/catalog/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/catalog/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/catalog/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="static/catalog/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/catalog/assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/catalog/assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+<header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+        <h1 class="logo me-auto"><a href="home">IT Solution</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="getstarted scrollto" href="/admin"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                        </svg>&nbsp;&nbsp;Admin</a></li>
+                <li><a class="getstarted scrollto" href="/logout"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z" />
+                            <path fill-rule="evenodd"
+                                d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z" />
+                        </svg>&nbsp;&nbsp;Logout</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+    </div>
+</header><!-- End Header -->
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex flex-column justify-content-center align-items-center" data-aos="fade" data-aos-delay="1500">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 text-center">
+          <h2><span>Catalog</span></h2>
+          <p>A wide range of collection of high quality products only for you.</p>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main" data-aos="fade" data-aos-delay="1500">
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+      <div class="container-fluid">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="static/catalog/assets/img/gallery/{{rut1.img}}" class="img-fluid" alt="">
+                <p class="row gy-4 justify-content-center text-muted" title="name">{{rut1.name}}</p>
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="static/catalog/assets/img/gallery/{{rut1.img}}" title="Gallery 1" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="{{rut1.link}}" class="details-link"><i class="bi bi-cart3"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="static/catalog/assets/img/gallery/{{rut2.img}}" class="img-fluid" alt="">
+              <p class="row gy-4 justify-content-center text-muted" title="name">{{rut2.name}}</p>
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="static/catalog/assets/img/gallery/{{rut2.img}}" title="Gallery 2" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="{{rut2.link}}" class="details-link"><i class="bi bi-cart3"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="static/catalog/assets/img/gallery/{{rut3.img}}" class="img-fluid" alt="">
+              <p class="row gy-4 justify-content-center text-muted" title="name">{{rut3.name}}</p>
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="static/catalog/assets/img/gallery/{{rut3.img}}" title="Gallery 3" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="{{rut3.link}}" class="details-link"><i class="bi bi-cart3"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="static/catalog/assets/img/gallery/{{rut4.img}}" class="img-fluid" alt="">
+              <p class="row gy-4 justify-content-center text-muted" title="name">{{rut4.name}}</p>
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="static/catalog/assets/img/gallery/{{rut4.img}}" title="Gallery 4" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="{{rut4.link}}" class="details-link"><i class="bi bi-cart3"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="static/catalog/assets/img/gallery/{{rut5.img}}" class="img-fluid" alt="">
+              <p class="row gy-4 justify-content-center text-muted" title="name">{{rut5.name}}</p>
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="static/catalog/assets/img/gallery/{{rut5.img}}" title="Gallery 5" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="{{rut5.link}}" class="details-link"><i class="bi bi-cart3"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="static/catalog/assets/img/gallery/{{rut6.img}}" class="img-fluid" alt="">
+              <p class="row gy-4 justify-content-center text-muted" title="name">{{rut6.name}}</p>
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="static/catalog/assets/img/gallery/{{rut6.img}}" title="Gallery 6" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="{{rut6.link}}" class="details-link"><i class="bi bi-cart3"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="static/catalog/assets/img/gallery/{{rut7.img}}" class="img-fluid" alt="">
+              <p class="row gy-4 justify-content-center text-muted" title="name">{{rut7.name}}</p>
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="static/catalog/assets/img/gallery/{{rut7.img}}" title="Gallery 7" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="{{rut7.link}}" class="details-link"><i class="bi bi-cart3"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gallery-item h-100">
+              <img src="static/catalog/assets/img/gallery/{{rut8.img}}" class="img-fluid" alt="">
+              <p class="row gy-4 justify-content-center text-muted" title="name">{{rut8.name}}</p>
+              <div class="gallery-links d-flex align-items-center justify-content-center">
+                <a href="static/catalog/assets/img/gallery/{{rut8.img}}" title="Gallery 8" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
+                <a href="{{rut8.link}}" class="details-link"><i class="bi bi-cart3"></i></a>
+              </div>
+            </div>
+          </div><!-- End Gallery Item -->
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>IT Solution</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">Rajan Kumar</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader">
+    <div class="line"></div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="static/catalog/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/catalog/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/catalog/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/catalog/assets/vendor/aos/aos.js"></script>
+  <script src="static/catalog/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/catalog/assets/js/main.js"></script>
+
+</body>
+
+</html>
